@@ -2,7 +2,6 @@ import icons from 'url:../../img/icons.svg';
 
 export default class View {
   _data;
-
   /**
    * Render the received object to the DOM
    * @param {Object | Object[]} data The data to be rendered (e.g. recipe)
@@ -35,14 +34,12 @@ export default class View {
 
     newElements.forEach((newEl, i) => {
       const curEl = curElements[i];
-      // console.log(curEl, newEl.isEqualNode(curEl));
 
       // Updates changed TEXT
       if (
         !newEl.isEqualNode(curEl) &&
         newEl.firstChild?.nodeValue.trim() !== ''
       ) {
-        // console.log('👀', newEl.firstChild.nodeValue.trim());
         curEl.textContent = newEl.textContent;
       }
 
