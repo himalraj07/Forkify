@@ -13,7 +13,7 @@
     "core-js": "^3.42.0",
     "parcel": "^2.15.2",
     "regenerator-runtime": "^0.14.1",
-    "sass": "^1.89.0"
+    "sass": "^1.26.10"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.15.2"
